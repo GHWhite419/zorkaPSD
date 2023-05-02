@@ -1,0 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&family=Montserrat:ital@0;1&display=swap");
+
+$baseFont: "Montserrat", sans-serif;
+$headerFont: "Merriweather", serif;
+
+html {
+    font-family: $baseFont;
+    text-transform: uppercase;
+}

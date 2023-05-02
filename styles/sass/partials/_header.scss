@@ -1,0 +1,29 @@
+.settingsBanner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  transition: .75s;
+  width: 0;
+  z-index: 10;
+  background: white;
+  height: 100%;
+  li {
+    padding-top: 1rem;
+  }
+}
+
+.menuOpenButton {
+  position: relative;
+  top: 1rem;
+  right: 0;
+}
+
+.menuOpen {
+  width: 75vw;
+  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+}
+
+.logo img {
+  filter: brightness(0.9);
+}

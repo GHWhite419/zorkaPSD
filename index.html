@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Zorka</title>
     <link rel="stylesheet" href="./styles/style.css" />
-    <link rel="icon" href="./assets/favicon.ico">
+    <link rel="icon" href="./assets/favicon.ico" />
   </head>
   <body>
     <header>
       <div class="wrapper">
-        <div class="settingsBanner">
+        <i class="fa-solid fa-bars fa-xl menuOpenButton"></i>
+        <div class="settingsBanner menuOpen">
+          <i class="fa-solid fa-xmark menuCloseButton"></i>
           <p>Welcome guest! <a href="">Log in</a> or <a href="">register</a></p>
           <ul>
             <li>My setting</li>
@@ -37,7 +39,10 @@
               <i class="fa-brands fa-square-behance fa-2xs"></i>
             </li>
           </ul>
-          <h1>Zorka</h1>
+          <div class="imgContainer logo">
+            <h1 class="sr-only">Zorka</h1>
+            <img src="/assets/logo.png" aria-hidden="true" />
+          </div>
           <a href=""><i class="fa-thin fa-cart-shopping"></i></a>
         </div>
         <nav>
@@ -194,112 +199,145 @@
         </section>
 
         <section class="hotItems">
-            <ul>
+          <ul>
+            <li>
+              <h2>New-in</h2>
+              <ul>
                 <li>
-                    <h2>New-in</h2>
-                    <ul>
-                        <li>
-                            <div class="imgContainer"><img src="./assets/new-in-img-1.jpg" alt=""></div>
-                            <h3></h3>
-                            <p></p>
-                            <div class="shopIcons"></div>
-                        </li>
-                        <li>
-                            <div class="imgContainer"><img src="./assets/new-in-img-2.jpg" alt=""></div>
-                            <h3></h3>
-                            <p></p>
-                            <div class="shopIcons"></div>
-                        </li>
-                    </ul>
+                  <div class="imgContainer">
+                    <img src="./assets/new-in-img-1.jpg" alt="" />
+                  </div>
+                  <h3></h3>
+                  <p></p>
+                  <div class="shopIcons"></div>
                 </li>
                 <li>
-                    <h2>Featured</h2>
-                    <ul>
-                        <li>
-                            <div class="imgContainer"><img src="./assets/featured-img-1.jpg" alt=""></div>
-                            <h3></h3>
-                            <p></p>
-                            <div class="shopIcons"></div>
-                        </li>
-                        <li>
-                            <div class="imgContainer"><img src="./assets/featured-img-2.jpg" alt=""></div>
-                            <h3></h3>
-                            <p></p>
-                            <div class="shopIcons"></div>
-                        </li>
-                    </ul>
+                  <div class="imgContainer">
+                    <img src="./assets/new-in-img-2.jpg" alt="" />
+                  </div>
+                  <h3></h3>
+                  <p></p>
+                  <div class="shopIcons"></div>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h2>Featured</h2>
+              <ul>
+                <li>
+                  <div class="imgContainer">
+                    <img src="./assets/featured-img-1.jpg" alt="" />
+                  </div>
+                  <h3></h3>
+                  <p></p>
+                  <div class="shopIcons"></div>
                 </li>
                 <li>
-                    <h2>Top rated</h2>
-                    <ul>
-                        <li>
-                            <div class="imgContainer"><img src="./assets/toprated-img-1.jpg" alt=""></div>
-                            <h3></h3>
-                            <p></p>
-                            <div class="shopIcons"></div>
-                        </li>
-                        <li>
-                            <div class="imgContainer"><img src="./assets/toprated-img-2.jpg" alt=""></div>
-                            <h3></h3>
-                            <p></p>
-                            <div class="shopIcons"></div>
-                        </li>
-                    </ul>
+                  <div class="imgContainer">
+                    <img src="./assets/featured-img-2.jpg" alt="" />
+                  </div>
+                  <h3></h3>
+                  <p></p>
+                  <div class="shopIcons"></div>
                 </li>
-            </ul>
+              </ul>
+            </li>
+            <li>
+              <h2>Top rated</h2>
+              <ul>
+                <li>
+                  <div class="imgContainer">
+                    <img src="./assets/toprated-img-1.jpg" alt="" />
+                  </div>
+                  <h3></h3>
+                  <p></p>
+                  <div class="shopIcons"></div>
+                </li>
+                <li>
+                  <div class="imgContainer">
+                    <img src="./assets/toprated-img-2.jpg" alt="" />
+                  </div>
+                  <h3></h3>
+                  <p></p>
+                  <div class="shopIcons"></div>
+                </li>
+              </ul>
+            </li>
+          </ul>
         </section>
         <section class="blogUpdates">
-            <h2>Blog updates</h2>
-            <p>Our stories</p>
-            <ul>
-                <li>
-                    <div class="imgContainer"><img src="./assets/blog-img-1.jpg" alt=""></div>
-                    <article>
-                        <h3>Mix & match weekend</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quam quos? Magni...</p>
-                        <a href="">Read more</a>
-                    </article>
-                </li>
-                <li>
-                    <div class="imgContainer"><img src="./assets/blog-img-2.jpg" alt=""></div>
-                    <article>
-                        <h3>For your inspiration</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quam quos? Magni...</p>
-                        <a href="">Read more</a>
-                    </article>
-                </li>
-                <li>
-                    <div class="imgContainer"><img src="./assets/blog-img-3.jpg" alt=""></div>
-                    <article>
-                        <h3>London fashion week 2015</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, quam quos? Magni...</p>
-                        <a href="">Read more</a>
-                    </article>
-                </li>
-            </ul>
+          <h2>Blog updates</h2>
+          <p>Our stories</p>
+          <ul>
+            <li>
+              <div class="imgContainer">
+                <img src="./assets/blog-img-1.jpg" alt="" />
+              </div>
+              <article>
+                <h3>Mix & match weekend</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+                  quam quos? Magni...
+                </p>
+                <a href="">Read more</a>
+              </article>
+            </li>
+            <li>
+              <div class="imgContainer">
+                <img src="./assets/blog-img-2.jpg" alt="" />
+              </div>
+              <article>
+                <h3>For your inspiration</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+                  quam quos? Magni...
+                </p>
+                <a href="">Read more</a>
+              </article>
+            </li>
+            <li>
+              <div class="imgContainer">
+                <img src="./assets/blog-img-3.jpg" alt="" />
+              </div>
+              <article>
+                <h3>London fashion week 2015</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
+                  quam quos? Magni...
+                </p>
+                <a href="">Read more</a>
+              </article>
+            </li>
+          </ul>
         </section>
         <section class="subscribe">
-            <h2>Subscribe</h2>
-            <p>Get the latest news & updates from Zorka</p>
-            <form action="submit">
-                <label for="subscribe" class="sr-only">Enter your email address</label>
-                <input type="email" id="subscribe" placeholder="Your email address">
-                <button type="submit">Subscribe</button>
-            </form>
+          <h2>Subscribe</h2>
+          <p>Get the latest news & updates from Zorka</p>
+          <form action="submit">
+            <label for="subscribe" class="sr-only"
+              >Enter your email address</label
+            >
+            <input
+              type="email"
+              id="subscribe"
+              placeholder="Your email address"
+            />
+            <button type="submit">Subscribe</button>
+          </form>
         </section>
         <section class="details">
-            <ul>
-                <li><img src="./assets/bershka.png" alt=""></li>
-                <li><img src="./assets/pull-bear.png" alt=""></li>
-                <li><img src="./assets/hm.png" alt=""></li>
-                <li><img src="./assets/zara.png" alt=""></li>
-                <li><img src="./assets/mango.png" alt=""></li>
-            </ul>
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-            </ul>
+          <ul>
+            <li><img src="./assets/bershka.png" alt="" /></li>
+            <li><img src="./assets/pull-bear.png" alt="" /></li>
+            <li><img src="./assets/hm.png" alt="" /></li>
+            <li><img src="./assets/zara.png" alt="" /></li>
+            <li><img src="./assets/mango.png" alt="" /></li>
+          </ul>
+          <ul>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
         </section>
       </div>
     </main>
@@ -389,5 +427,6 @@
       src="https://kit.fontawesome.com/e4f1610b04.js"
       crossorigin="anonymous"
     ></script>
+    <script src="./scripts.js"></script>
   </body>
 </html>
