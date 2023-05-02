@@ -287,32 +287,43 @@ html {
   text-transform: uppercase;
 }
 
+header .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .settingsBanner {
   position: fixed;
   top: 0;
-  right: 0;
-  -webkit-transition: 0.75s;
-  transition: 0.75s;
-  width: 0;
+  right: -100vw;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  width: 75vw;
   z-index: 10;
   background: white;
   height: 100%;
+  padding: 1rem;
 }
 .settingsBanner li {
   padding-top: 1rem;
 }
 
-.menuOpenButton {
-  position: relative;
-  top: 1rem;
-  right: 0;
-}
-
 .menuOpen {
-  width: 75vw;
+  right: 0;
   -webkit-box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5);
           box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5);
-  padding: 1rem;
+}
+
+.menuOpenButton {
+  position: relative;
+  top: 1.5rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
 }
 
 .logo img {
