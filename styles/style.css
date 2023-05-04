@@ -282,9 +282,11 @@ li {
   list-style: none;
 }
 
-html {
+body {
   font-family: "Montserrat", sans-serif;
   text-transform: uppercase;
+  color: #939495;
+  font-size: 0.75rem;
 }
 
 header .wrapper {
@@ -305,12 +307,19 @@ header .wrapper {
   transition: 0.5s;
   width: 75vw;
   z-index: 10;
-  background: white;
+  background: #fff;
   height: 100%;
   padding: 1rem;
 }
 .settingsBanner li {
   padding-top: 1rem;
+}
+.settingsBanner a {
+  color: #939495;
+  text-decoration: none;
+}
+.settingsBanner a:hover {
+  color: #000;
 }
 
 .menuOpen {
@@ -325,8 +334,83 @@ header .wrapper {
   -ms-flex-item-align: end;
       align-self: flex-end;
 }
+.menuOpenButton:hover {
+  color: #000;
+}
 
+.menuCloseButton:hover {
+  color: #000;
+}
+
+.titleBanner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.social li {
+  padding-top: 1rem;
+}
+
+.logo {
+  max-width: 7rem;
+}
 .logo img {
   -webkit-filter: brightness(0.9);
           filter: brightness(0.9);
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+nav ul li {
+  margin: 1rem 1.75rem;
+  padding-bottom: 0.5rem;
+  color: #000;
+}
+nav ul .currentPage {
+  border-bottom: 2px solid #000;
+}
+
+@media (min-width: 860px) {
+  header .menuOpenButton,
+  header .menuCloseButton {
+    display: none;
+  }
+  .settingsBanner {
+    position: relative;
+    right: 0;
+    width: 100%;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border-bottom: 1px solid #939495;
+  }
+  .settingsBanner ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .settingsBanner li {
+    padding-top: 0;
+    padding-left: 1rem;
+  }
 }

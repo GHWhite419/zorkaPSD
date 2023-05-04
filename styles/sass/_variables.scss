@@ -3,7 +3,13 @@
 $baseFont: "Montserrat", sans-serif;
 $headerFont: "Merriweather", serif;
 
-html {
+$colorPrimary: #939495;
+$colorHighlight: #000;
+$colorPromo: #CA7379;
+
+body {
     font-family: $baseFont;
     text-transform: uppercase;
+    color: $colorPrimary;
+    font-size: .75rem;
 }

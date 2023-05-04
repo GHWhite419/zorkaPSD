@@ -1,34 +1,104 @@
+@use "../variables" as *;
+
+// Min-width 860px to remove hamburger menu styles (subject to change)
+
 header .wrapper {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .settingsBanner {
   position: fixed;
   top: 0;
   right: -100vw;
-  transition: .5s;
+  transition: 0.5s;
   width: 75vw;
   z-index: 10;
-  background: white;
+  background: #fff;
   height: 100%;
   padding: 1rem;
   li {
     padding-top: 1rem;
   }
+  a {
+    color: $colorPrimary;
+    text-decoration: none;
+    &:hover {
+      color: $colorHighlight;
+    }
+  }
 }
 
 .menuOpen {
-    right: 0;
-    box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5);
-  }
+  right: 0;
+  box-shadow: 0 0 0 10000px rgba(0, 0, 0, 0.5);
+}
 
 .menuOpenButton {
   position: relative;
   top: 1.5rem;
   align-self: flex-end;
+  &:hover {
+    color: $colorHighlight;
+  }
 }
 
-.logo img {
-  filter: brightness(0.9);
+.menuCloseButton:hover {
+  color: $colorHighlight;
+}
+
+.titleBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2rem;
+}
+
+.social li {
+  padding-top: 1rem;
+}
+
+.logo {
+  max-width: 7rem;
+  img {
+    filter: brightness(0.9);
+  }
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  li {
+    margin: 1rem 1.75rem;
+    padding-bottom: 0.5rem;
+    color: $colorHighlight;
+  }
+  .currentPage {
+    border-bottom: 2px solid $colorHighlight;
+  }
+}
+
+@media (min-width: 860px) {
+  header .menuOpenButton,
+  header .menuCloseButton {
+    display: none;
+  }
+
+  .settingsBanner {
+    position: relative;
+    right: 0;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid $colorPrimary;
+    ul {
+      display: flex;
+    }
+    li {
+      padding-top: 0;
+      padding-left: 1rem;
+    }
+  }
 }
