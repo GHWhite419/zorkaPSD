@@ -352,7 +352,7 @@ header .wrapper {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding-top: 2rem;
+  padding-top: 4rem;
 }
 
 .social li {
@@ -360,7 +360,11 @@ header .wrapper {
 }
 
 .logo {
-  max-width: 7rem;
+  max-width: 5rem;
+  position: absolute;
+  right: 0;
+  left: 0;
+  margin: auto;
 }
 .logo img {
   -webkit-filter: brightness(0.9);
@@ -392,10 +396,11 @@ nav ul .currentPage {
     display: none;
   }
   .settingsBanner {
-    position: relative;
+    position: absolute;
+    height: auto;
     right: 0;
     width: 100%;
-    padding: 0;
+    padding: 0 7.5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -412,5 +417,13 @@ nav ul .currentPage {
   .settingsBanner li {
     padding-top: 0;
     padding-left: 1rem;
+  }
+  header .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .social li {
+    padding: 0 0.5rem;
   }
 }
