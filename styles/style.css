@@ -427,3 +427,52 @@ nav ul .currentPage {
     padding: 0 0.5rem;
   }
 }
+.slideshow {
+  background-image: url(..//assets/home3-slideshow1.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+.slideshow .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+.slideshow h2 {
+  color: #000;
+  letter-spacing: 7px;
+  font-size: 0.8rem;
+  margin-top: 5rem;
+  text-align: center;
+}
+.slideshow p {
+  color: #000;
+  font-family: "Merriweather", serif;
+  text-transform: capitalize;
+  font-size: 3.5rem;
+  margin: 0;
+  text-align: center;
+}
+.slideshow button {
+  margin-top: 2rem;
+  background-color: white;
+  border-style: none;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 0.65rem;
+}
