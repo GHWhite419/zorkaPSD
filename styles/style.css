@@ -544,3 +544,45 @@ nav ul .currentPage {
     width: 4rem;
   }
 }
+.shop h2 {
+  text-align: center;
+  color: #000;
+  letter-spacing: 4px;
+  font-size: 1rem;
+  padding-top: 1.5rem;
+}
+.shop .subHeader {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  color: #000;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-transform: none;
+  font-size: 0.7rem;
+}
+.shop .trendingCategories {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 2rem;
+}
+.shop .trendingCategories li {
+  color: #000;
+  padding: 0 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.shop .trendingCategories .trendingActive {
+  color: #CA7379;
+  border-bottom: 1px solid #000;
+  max-width: 2.5rem;
+  margin-right: 3rem;
+  padding: 0;
+  padding-bottom: 0.25rem;
+}
+.shop .imgContainer {
+  max-width: 15rem;
+}

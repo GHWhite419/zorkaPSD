@@ -1,60 +1,43 @@
 @use "../variables" as *;
 
-.promotions li {
-  color: $colorBackground;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 1.5rem 0;
-  font-size: 0.6rem;
-  font-weight: 700;
-  .promoText {
-    width: 100%;
+.shop {
+  h2 {
     text-align: center;
-    padding: 0 .5rem;
+    color: $colorHighlight;
+    letter-spacing: 4px;
+    font-size: 1rem;
+    padding-top: 1.5rem;
   }
-  .promoIcon {
-    width: 3.5rem;
-    height: 100%;
-    img {
-      padding: 1rem;
-    }
+  .subHeader {
+    text-align: center;
+    font-family: $headerFont;
+    color: $colorHighlight;
+    font-style: italic;
+    letter-spacing: 2px;
+    text-transform: none;
+    font-size: 0.7rem;
   }
-  &:first-of-type {
-    background-color: $colorPromoShipping;
-    .promoIcon {
-      background-color: #b5676d;
-    }
-  }
-  &:nth-of-type(2) {
-    background-color: $colorPromoGiveaway;
-    .promoIcon {
-      background-color: #ad9a82;
-    }
-  }
-  &:last-of-type {
-    background-color: $colorPromoSale;
-    .promoIcon {
-      background-color: #738191;
-    }
-  }
-}
-
-@media (min-width: 730px) {
-  .promotions {
+  .trendingCategories {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    padding-top: 2rem;
     li {
-      width: calc(100% / 3 - 1rem);
+      color: $colorHighlight;
+      padding: 0 .75rem;
+      font-weight: 700;
+      letter-spacing: 2px;
     }
-    li .promoIcon {
-        width: 5rem;
+    .trendingActive {
+      color: $colorPromoShipping;
+      border-bottom: 1px solid $colorHighlight;
+      max-width: 2.5rem;
+      margin-right: 3rem;
+      padding: 0;
+      padding-bottom: .25rem;
     }
+  }
+  
+  .imgContainer {
+    max-width: 15rem;
   }
 }
-
-@media (min-width: 890px) {
-    .promotions li .promoIcon {
-        width: 4rem;
-    }
-  }
