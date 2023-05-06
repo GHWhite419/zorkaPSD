@@ -476,3 +476,71 @@ nav ul .currentPage {
   letter-spacing: 1px;
   font-size: 0.65rem;
 }
+
+.promotions li {
+  color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.5rem 0;
+  font-size: 0.6rem;
+  font-weight: 700;
+}
+.promotions li .promoText {
+  width: 100%;
+  text-align: center;
+  padding: 0 0.5rem;
+}
+.promotions li .promoIcon {
+  width: 3.5rem;
+  height: 100%;
+}
+.promotions li .promoIcon img {
+  padding: 1rem;
+}
+.promotions li:first-of-type {
+  background-color: #CA7379;
+}
+.promotions li:first-of-type .promoIcon {
+  background-color: #b5676d;
+}
+.promotions li:nth-of-type(2) {
+  background-color: #C1AC91;
+}
+.promotions li:nth-of-type(2) .promoIcon {
+  background-color: #ad9a82;
+}
+.promotions li:last-of-type {
+  background-color: #8090A1;
+}
+.promotions li:last-of-type .promoIcon {
+  background-color: #738191;
+}
+
+@media (min-width: 730px) {
+  .promotions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .promotions li {
+    width: calc(33.3333333333% - 1rem);
+  }
+  .promotions li .promoIcon {
+    width: 5rem;
+  }
+}
+@media (min-width: 890px) {
+  .promotions li .promoIcon {
+    width: 4rem;
+  }
+}

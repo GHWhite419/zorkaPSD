@@ -5,7 +5,11 @@ $headerFont: "Merriweather", serif;
 
 $colorPrimary: #939495;
 $colorHighlight: #000;
-$colorPromo: #CA7379;
+$colorBackground: #FFF;
+
+$colorPromoShipping: #CA7379;
+$colorPromoGiveaway: #C1AC91;
+$colorPromoSale: #8090A1;
 
 body {
     font-family: $baseFont;
