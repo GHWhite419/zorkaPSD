@@ -5,29 +5,47 @@ $headerFont: "Merriweather", serif;
 
 $colorPrimary: #939495;
 $colorAccent: #000;
-$colorBackground: #FFF;
-$colorBackgroundAlt: #FAFAFA;
+$colorBackground: #fff;
+$colorBackgroundAlt: #fafafa;
 
-$colorPromoPrimary: #CA7379;
-$colorPromoSecondary: #C1AC91;
-$colorPromoTertiary: #8090A1;
+$colorPromoPrimary: #ca7379;
+$colorPromoSecondary: #c1ac91;
+$colorPromoTertiary: #8090a1;
 
 body {
-    font-family: $baseFont;
-    text-transform: uppercase;
-    color: $colorPrimary;
-    font-size: .75rem;
+  font-family: $baseFont;
+  text-transform: uppercase;
+  color: $colorPrimary;
+  font-size: 0.75rem;
+}
+
+@mixin sectionHeading {
+  text-align: center;
+  color: #000;
+  letter-spacing: 4px;
+  font-size: 1rem;
+  padding-top: 1.5rem;
+}
+
+@mixin subHeading {
+    text-align: center;
+    font-family: $headerFont;
+    color: $colorAccent;
+    font-style: italic;
+    letter-spacing: 2px;
+    text-transform: none;
+    font-size: 0.7rem;
 }
 
 @mixin button {
-    margin-top: 2rem;
-    background-color: white;
-    border-style: none;
-    text-transform: uppercase;
-    padding: 0.75rem 1.5rem;
-    border-radius: 2rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
-    font-size: 0.65rem;
+  margin-top: 2rem;
+  background-color: white;
+  border-style: none;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 0.65rem;
 }

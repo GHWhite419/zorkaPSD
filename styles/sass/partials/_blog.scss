@@ -1,0 +1,70 @@
+@use "../variables" as *;
+
+.blogUpdates {
+  h2 {
+    @include sectionHeading;
+  }
+  .subHeader {
+    @include subHeading;
+  }
+  ul {
+    margin-top: 3rem;
+  }
+  li {
+    margin-bottom: 2rem;
+  }
+  .imgContainer {
+    width: 10rem;
+    margin: 0 auto;
+  }
+  article {
+    text-align: center;
+    font-size: 0.7rem;
+  }
+  h3 {
+    color: $colorAccent;
+    font-size: 0.7rem;
+  }
+  p {
+    text-transform: none;
+  }
+  a {
+    color: $colorPromoPrimary;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 520px) {
+  .blogUpdates {
+    li {
+      display: flex;
+    }
+    article {
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding-left: 1rem;
+    }
+    h3 {
+        margin: 0;
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+    .blogUpdates {
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+        li {
+            width: calc(100% / 3 - 1rem);
+        }
+        .imgContainer {
+            width: 19rem;
+        }
+    }
+}

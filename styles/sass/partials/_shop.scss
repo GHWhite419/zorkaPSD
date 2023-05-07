@@ -2,20 +2,10 @@
 
 .shop {
   h2 {
-    text-align: center;
-    color: $colorAccent;
-    letter-spacing: 4px;
-    font-size: 1rem;
-    padding-top: 1.5rem;
+    @include sectionHeading;
   }
   .subHeader {
-    text-align: center;
-    font-family: $headerFont;
-    color: $colorAccent;
-    font-style: italic;
-    letter-spacing: 2px;
-    text-transform: none;
-    font-size: 0.7rem;
+    @include subHeading;
   }
   .trendingCategories {
     display: flex;
@@ -157,7 +147,7 @@
 @media (min-width: 795px) {
   .shop {
     .imgContainer:nth-of-type(2) .imgContent {
-        border: 3.5px solid $colorBackground;
+      border: 3.5px solid $colorBackground;
     }
     .anchorIcon {
       display: block;
@@ -175,9 +165,9 @@
     }
   }
   .shopBanners .imgContainer {
-    width: calc(100% / 2 - .75rem);
+    width: calc(100% / 2 - 0.75rem);
     &:nth-of-type(2) .imgContent {
-        width: 65%;
+      width: 65%;
     }
   }
 }
