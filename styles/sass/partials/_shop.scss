@@ -64,10 +64,6 @@
     margin-top: 1.5rem;
     height: 1rem;
   }
-  .itemDisplay p {
-    color: $colorPromoPrimary;
-    font-weight: 700;
-  }
   s {
     color: $colorPrimary;
     font-size: 0.65rem;
@@ -75,12 +71,6 @@
   .shopButtons {
     display: flex;
     justify-content: space-between;
-  }
-  .shopIcons button {
-    padding: 0.5rem;
-    img {
-      width: 1rem;
-    }
   }
   .shopBanners {
     display: flex;
@@ -129,6 +119,16 @@
     padding: 0.5rem;
     border-right: 3.5px solid $colorBackground;
     display: none;
+  }
+}
+.pricetag {
+  color: $colorPromoPrimary;
+  font-weight: 700;
+}
+.shopIcons button {
+  padding: 0.5rem;
+  img {
+    width: 1rem;
   }
 }
 

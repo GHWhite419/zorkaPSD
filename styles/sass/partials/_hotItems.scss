@@ -1,0 +1,102 @@
+@use "../variables" as *;
+
+.hotItems {
+  padding: 1rem 0;
+    background-color: $colorBackgroundAlt;
+//   background-color: blue;
+  .wrapper div {
+    background-color: $colorBackground;
+    // background-color: wheat;
+    padding: 0 0.5rem;
+    margin: 1rem 0;
+    li {
+      padding-bottom: 2rem;
+    }
+  }
+  h2 {
+    border-bottom: 1px solid $colorAccent;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 0.5rem;
+    width: 6.5rem;
+    margin: auto;
+    margin-bottom: 2.5rem;
+  }
+
+  h2,
+  h3 {
+    color: $colorAccent;
+    font-size: 0.75rem;
+  }
+  .wrapper .imgContainer {
+    max-width: 8rem;
+    margin: auto;
+    padding: 0;
+  }
+  .itemDetails {
+    text-align: center;
+  }
+  .shopIcons button {
+    @include button;
+    border: 1px solid $colorPrimary;
+    padding: 0.5rem;
+    margin: 0;
+  }
+}
+
+@media (min-width: 520px) {
+  .hotItems .wrapper {
+    div li {
+      display: flex;
+    }
+    h2 {
+      text-align: left;
+      margin: 0;
+      margin-left: 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .imgContainer {
+      margin: 0 auto;
+    }
+    h3 {
+      margin-top: 0;
+    }
+    .itemDetails {
+      width: 14rem;
+      text-align: left;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .shopIcons {
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+      height: 100%;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 620px) {
+  .hotItems .wrapper .imgContainer {
+    width: 40%;
+    max-width: none;
+  }
+}
+
+@media (min-width: 1080px) {
+  .hotItems .wrapper {
+    display: flex;
+    justify-content: space-between;
+    div {
+      width: calc(100% / 3 - 1rem);
+    }
+    .itemDetails {
+      width: 14rem;
+    }
+    .shopIcons {
+      width: 100%;
+    }
+  }
+}
