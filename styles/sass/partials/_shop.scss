@@ -3,7 +3,7 @@
 .shop {
   h2 {
     text-align: center;
-    color: $colorHighlight;
+    color: $colorAccent;
     letter-spacing: 4px;
     font-size: 1rem;
     padding-top: 1.5rem;
@@ -11,7 +11,7 @@
   .subHeader {
     text-align: center;
     font-family: $headerFont;
-    color: $colorHighlight;
+    color: $colorAccent;
     font-style: italic;
     letter-spacing: 2px;
     text-transform: none;
@@ -21,23 +21,96 @@
     display: flex;
     justify-content: center;
     padding-top: 2rem;
+    flex-wrap: wrap;
     li {
-      color: $colorHighlight;
-      padding: 0 .75rem;
+      color: $colorAccent;
+      padding: 0 0.75rem;
       font-weight: 700;
       letter-spacing: 2px;
+      margin: 0.5rem 0;
     }
     .trendingActive {
-      color: $colorPromoShipping;
-      border-bottom: 1px solid $colorHighlight;
+      color: $colorPromoPrimary;
+      border-bottom: 1px solid $colorAccent;
       max-width: 2.5rem;
       margin-right: 3rem;
       padding: 0;
-      padding-bottom: .25rem;
+      padding-bottom: 0.25rem;
     }
   }
-  
   .imgContainer {
-    max-width: 15rem;
+    width: 100%;
+  }
+  button {
+    @include button;
+    border: 1px solid $colorPrimary;
+    padding: 0.5rem 1.25rem;
+    font-size: 0.6rem;
+  }
+  .itemDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      width: 16rem;
+      text-align: center;
+      margin: 0 1rem;
+      margin-bottom: 2.5rem;
+    }
+  }
+  h3 {
+    color: $colorAccent;
+    font-size: 0.6rem;
+    margin-top: 1.5rem;
+    height: 1rem;
+  }
+  .itemDisplay p {
+    color: $colorPromoPrimary;
+    font-weight: 700;
+  }
+  s {
+    color: $colorPrimary;
+    font-size: .65rem;
+  }
+  .shopButtons {
+    display: flex;
+    justify-content: space-between;
+  }
+  .shopIcons button {
+    padding: 0.5rem;
+    img {
+      width: 1rem;
+    }
+  }
+  .shopBanners {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .imgContainer {
+        position: relative;
+        margin: 1rem 0;
+    }
+    .imgContent {
+        position: absolute;
+        color: $colorBackground;
+        right: 0;
+        top: 0;
+        width: 100%;
+        text-align: center;
+    }
+  }
+  .anchorIcon {
+    max-width: 2rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .shop .itemDisplay {
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    li {
+      width: calc(100% / 4 - 0.75rem);
+      margin: 0;
+    }
   }
 }

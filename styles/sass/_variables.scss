@@ -4,16 +4,29 @@ $baseFont: "Montserrat", sans-serif;
 $headerFont: "Merriweather", serif;
 
 $colorPrimary: #939495;
-$colorHighlight: #000;
+$colorAccent: #000;
 $colorBackground: #FFF;
 
-$colorPromoShipping: #CA7379;
-$colorPromoGiveaway: #C1AC91;
-$colorPromoSale: #8090A1;
+$colorPromoPrimary: #CA7379;
+$colorPromoSecondary: #C1AC91;
+$colorPromoTertiary: #8090A1;
 
 body {
     font-family: $baseFont;
     text-transform: uppercase;
     color: $colorPrimary;
     font-size: .75rem;
+}
+
+@mixin button {
+    margin-top: 2rem;
+    background-color: white;
+    border-style: none;
+    text-transform: uppercase;
+    padding: 0.75rem 1.5rem;
+    border-radius: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 0.65rem;
 }

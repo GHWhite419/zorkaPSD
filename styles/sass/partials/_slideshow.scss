@@ -13,14 +13,14 @@
     height: 100%;
   }
   h2 {
-    color: $colorHighlight;
+    color: $colorAccent;
     letter-spacing: 7px;
     font-size: 0.8rem;
     margin-top: 5rem;
     text-align: center;
   }
   p {
-    color: $colorHighlight;
+    color: $colorAccent;
     font-family: $headerFont;
     text-transform: capitalize;
     font-size: 3.5rem;
@@ -28,15 +28,6 @@
     text-align: center;
   }
   button {
-    margin-top: 2rem;
-    background-color: white;
-    border-style: none;
-    text-transform: uppercase;
-    padding: 0.75rem 1.5rem;
-    border-radius: 2rem;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 700;
-    letter-spacing: 1px;
-    font-size: 0.65rem;
+    @include button;
   }
 }

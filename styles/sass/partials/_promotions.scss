@@ -21,19 +21,19 @@
     }
   }
   &:first-of-type {
-    background-color: $colorPromoShipping;
+    background-color: $colorPromoPrimary;
     .promoIcon {
       background-color: #b5676d;
     }
   }
   &:nth-of-type(2) {
-    background-color: $colorPromoGiveaway;
+    background-color: $colorPromoSecondary;
     .promoIcon {
       background-color: #ad9a82;
     }
   }
   &:last-of-type {
-    background-color: $colorPromoSale;
+    background-color: $colorPromoTertiary;
     .promoIcon {
       background-color: #738191;
     }

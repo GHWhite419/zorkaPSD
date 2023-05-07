@@ -14,7 +14,7 @@ header .wrapper {
   transition: 0.5s;
   width: 75vw;
   z-index: 10;
-  background: #fff;
+  background: $colorBackground;
   height: 100%;
   padding: 1rem;
   li {
@@ -24,7 +24,7 @@ header .wrapper {
     color: $colorPrimary;
     text-decoration: none;
     &:hover {
-      color: $colorHighlight;
+      color: $colorAccent;
     }
   }
 }
@@ -39,12 +39,12 @@ header .wrapper {
   top: 1.5rem;
   align-self: flex-end;
   &:hover {
-    color: $colorHighlight;
+    color: $colorAccent;
   }
 }
 
 .menuCloseButton:hover {
-  color: $colorHighlight;
+  color: $colorAccent;
 }
 
 .titleBanner {
@@ -61,9 +61,9 @@ header .wrapper {
 .logo {
   max-width: 5rem;
   position: absolute;
-right: 0;
-left: 0;
-margin: auto;
+  right: 0;
+  left: 0;
+  margin: auto;
   img {
     filter: brightness(0.9);
   }
@@ -76,10 +76,10 @@ nav ul {
   li {
     margin: 1rem 1.75rem;
     padding-bottom: 0.5rem;
-    color: $colorHighlight;
+    color: $colorAccent;
   }
   .currentPage {
-    border-bottom: 2px solid $colorHighlight;
+    border-bottom: 2px solid $colorAccent;
   }
 }
 
@@ -97,7 +97,7 @@ nav ul {
     padding: 0 7.5%;
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid $colorPrimary;
+    border-bottom: 1px solid $colorPromoTertiary;
     ul {
       display: flex;
     }
@@ -110,7 +110,7 @@ nav ul {
   header .social {
     display: flex;
     li {
-      padding: 0 .5rem;
+      padding: 0 0.5rem;
     }
   }
 }
