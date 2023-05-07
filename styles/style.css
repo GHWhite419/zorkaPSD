@@ -952,3 +952,110 @@ nav ul .currentPage {
     width: 19rem;
   }
 }
+.subscribe {
+  background-image: url("../assets/parallax-section-2.jpg");
+  height: 55vh;
+  background-position: center;
+}
+.subscribe .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.subscribe h2 {
+  text-align: center;
+  color: #000;
+  letter-spacing: 4px;
+  font-size: 1rem;
+  padding-top: 1.5rem;
+  color: #fff;
+  padding: 0;
+  margin-bottom: 0;
+}
+.subscribe .subHeader {
+  text-align: center;
+  font-family: "Merriweather", serif;
+  color: #000;
+  font-style: italic;
+  letter-spacing: 2px;
+  text-transform: none;
+  font-size: 0.7rem;
+  color: #fff;
+}
+.subscribe form {
+  margin-top: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.subscribe input {
+  padding: 0.75rem;
+  text-align: center;
+  border-radius: 2rem;
+  min-width: 15rem;
+  margin: 0.5rem;
+  outline: none;
+}
+.subscribe input::-webkit-input-placeholder {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+}
+.subscribe input::-moz-placeholder {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+}
+.subscribe input:-ms-input-placeholder {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+}
+.subscribe input::-ms-input-placeholder {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+}
+.subscribe input::placeholder {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  letter-spacing: 2px;
+}
+.subscribe button {
+  margin-top: 2rem;
+  background-color: white;
+  border-style: none;
+  text-transform: uppercase;
+  padding: 0.75rem 1.5rem;
+  border-radius: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 0.65rem;
+  background-color: #ca7379;
+  color: #fff;
+  font-size: 0.65rem;
+  margin: 0.5rem;
+}
+
+@media (min-width: 1200px) {
+  .subscribe {
+    background-position: 70% 30%;
+  }
+}

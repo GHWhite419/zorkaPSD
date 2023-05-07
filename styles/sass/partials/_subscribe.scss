@@ -1,0 +1,56 @@
+@use "../variables" as *;
+
+.subscribe {
+  background-image: url("../assets/parallax-section-2.jpg");
+  height: 55vh;
+  background-position: center;
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  h2 {
+    @include sectionHeading;
+    color: $colorBackground;
+    padding: 0;
+    margin-bottom: 0;
+  }
+  .subHeader {
+    @include subHeading;
+    color: $colorBackground;
+  }
+  form {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  input {
+    padding: 0.75rem;
+    text-align: center;
+    border-radius: 2rem;
+    min-width: 15rem;
+    margin: .5rem;
+    outline: none;
+    &::placeholder {
+      text-transform: uppercase;
+      font-size: 0.6rem;
+      letter-spacing: 2px;
+    }
+  }
+  button {
+    @include button;
+    background-color: $colorPromoPrimary;
+    color: $colorBackground;
+    font-size: 0.65rem;
+    margin: .5rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .subscribe {
+    background-position: 70% 30%;
+  }
+}
