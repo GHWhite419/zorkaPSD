@@ -1,0 +1,60 @@
+@use "../variables" as *;
+
+.promotions li {
+  color: $colorBackground;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+  font-size: 0.6rem;
+  font-weight: 600;
+  .promoText {
+    width: 100%;
+    text-align: center;
+    padding: 0 .5rem;
+  }
+  .promoIcon {
+    width: 3.5rem;
+    height: 100%;
+    img {
+      padding: 1rem;
+    }
+  }
+  &:first-of-type {
+    background-color: $colorPromoPrimary;
+    .promoIcon {
+      background-color: #b5676d;
+    }
+  }
+  &:nth-of-type(2) {
+    background-color: $colorPromoSecondary;
+    .promoIcon {
+      background-color: #ad9a82;
+    }
+  }
+  &:last-of-type {
+    background-color: $colorPromoTertiary;
+    .promoIcon {
+      background-color: #738191;
+    }
+  }
+}
+
+@media (min-width: 730px) {
+  .promotions {
+    display: flex;
+    justify-content: space-between;
+    li {
+      width: calc(100% / 3 - 1rem);
+    }
+    li .promoIcon {
+        width: 5rem;
+    }
+  }
+}
+
+@media (min-width: 890px) {
+    .promotions li .promoIcon {
+        width: 4rem;
+    }
+  }

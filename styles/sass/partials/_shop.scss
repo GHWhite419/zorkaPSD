@@ -1,0 +1,181 @@
+@use "../variables" as *;
+
+.shop {
+  h2 {
+    @include sectionHeading;
+  }
+  .subHeader {
+    @include subHeading;
+  }
+  .trendingCategories {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+    flex-wrap: wrap;
+    li {
+      color: $colorAccent;
+      padding: 0 0.75rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      margin: 0.5rem 0;
+    }
+    .trendingActive {
+      color: $colorPromoPrimary;
+      border-bottom: 1px solid $colorAccent;
+      max-width: 2.5rem;
+      margin-right: 3rem;
+      padding: 0;
+      padding-bottom: 0.25rem;
+    }
+  }
+  .imgContainer {
+    width: 100%;
+  }
+  button {
+    @include button;
+    border: 1px solid $colorPrimary;
+    padding: 0.5rem 1rem;
+    font-size: 0.6rem;
+  }
+  .itemDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    li {
+      width: 16rem;
+      text-align: center;
+      margin: 0 1rem;
+      margin-bottom: 2.5rem;
+    }
+    .imgContainer {
+      position: relative;
+    }
+    .itemHover {
+      position: absolute;
+      background-color: $colorBackground;
+      width: calc(100% - 0.85rem);
+      height: calc(100% - 0.85rem);
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      filter: opacity(0.9);
+      display: none;
+    }
+    .hoverIcon {
+      background-color: $colorPromoPrimary;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 2.5rem;
+      border-radius: 100%;
+    }
+    .hoverIcon img {
+      padding: 0.65rem;
+    }
+    .imgContainer:hover .itemHover {
+      display: block;
+    }
+    .iconCollection {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      letter-spacing: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    .iconCollection span {
+      color: $colorBackground;
+      font-size: 0.8rem;
+      border-radius: 50%;
+      font-weight: 500;
+      height: 3rem;
+      width: 3rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0.5rem;
+      margin-top: 0;
+    }
+    .discountIcon {
+      background-color: $colorPromoPrimary;
+    }
+    .newIcon {
+      background-color: $colorPromoTertiary;
+    }
+    .itemTimer {
+      position: absolute;
+      display: flex;
+      font-size: 1rem;
+      bottom: 0;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      background-color: white;
+      filter: opacity(0.9);
+      height: 35%;
+    }
+    .itemTimer li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+    }
+    .itemTimer p {
+      padding: 0;
+      margin: 0;
+      color: $colorAccent;
+      font-size: 0.6rem;
+      letter-spacing: 0;
+      font-weight: 600;
+    }
+    .itemTimer span {
+      color: $colorBackground;
+      background-color: $colorAccent;
+      font-size: 0.8rem;
+      border-radius: 50%;
+      font-weight: 500;
+      height: 2rem;
+      width: 2rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      letter-spacing: 0;
+    }
+  }
+  h3 {
+    color: $colorAccent;
+    font-size: 0.6rem;
+    margin-top: 1.5rem;
+    height: 1rem;
+  }
+  s {
+    color: $colorPrimary;
+    font-size: 0.65rem;
+  }
+  .shopButtons {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+.pricetag {
+  color: $colorPromoPrimary;
+  font-weight: 500;
+}
+.shopIcons button {
+  padding: 0.5rem;
+  img {
+    width: 1rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .shop .itemDisplay {
+    justify-content: space-between;
+    margin-bottom: 2.5rem;
+    li {
+      width: calc(100% / 4 - 0.75rem);
+      margin: 0;
+    }
+  }
+}

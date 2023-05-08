@@ -1,0 +1,97 @@
+@use "../variables" as *;
+
+footer {
+  background-color: $colorBackgroundAlt;
+  padding-top: 2rem;
+  text-align: center;
+  h2 {
+    color: $colorAccent;
+    text-align: center;
+    border-bottom: 1px solid $colorAccent;
+    width: 5rem;
+    margin: 0 auto;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    padding-bottom: 0.5rem;
+  }
+  .address {
+    color: $colorAccent;
+    font-weight: 700;
+    display: inline-block;
+    margin: 1.5rem 0;
+  }
+  .footerLocation p {
+    text-transform: none;
+  }
+  .social {
+    display: flex;
+    li {
+      color: $colorPrimary;
+      margin-right: 1rem;
+      font-size: 1rem;
+    }
+    li:hover i {
+      color: $colorAccent;
+    }
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    li {
+      margin: 0.6rem;
+      color: $colorPrimary;
+      font-weight: 700;
+      font-size: 0.7rem;
+    }
+  }
+  .copyrightBanner p {
+    font-size: 0.6rem;
+    font-weight: 700;
+  }
+  .copyrightBanner ul {
+    justify-content: space-around;
+  }
+}
+
+@media (min-width: 875px) {
+  footer {
+    text-align: left;
+    nav {
+      display: flex;
+      justify-content: space-between;
+    }
+    .footerLocation {
+        max-width: 16rem;
+    }
+    h2 {
+      text-align: left;
+      margin: 0;
+    }
+    .address {
+      padding-right: 1rem;
+    }
+    ul {
+      flex-direction: column;
+    }
+    ul li {
+      margin: .25rem 0;
+      font-weight: 500;
+    }
+    .social {
+      flex-direction: row;
+      justify-content: flex-start;
+    }
+  }
+  .copyrightBanner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    ul {
+        flex-direction: row;
+    }
+    ul li {
+        margin: 0;
+        margin-left: .6rem;
+    }
+  }
+}
