@@ -994,7 +994,7 @@ nav ul .currentPage {
   color: #fff;
 }
 .subscribe form {
-  margin-top: 1rem;
+  margin-top: 0.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1057,5 +1057,77 @@ nav ul .currentPage {
 @media (min-width: 1200px) {
   .subscribe {
     background-position: 70% 30%;
+  }
+}
+.logos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid #8090a1;
+}
+.logos li {
+  max-width: 8rem;
+  margin: 2rem;
+}
+
+.detailContainers li {
+  border: 1px solid #ca7379;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  letter-spacing: 4px;
+  font-size: 0.6rem;
+  color: #000;
+  min-height: 7rem;
+  margin: 2rem 0;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+.detailContainers .imgContainer {
+  max-width: 1.5rem;
+  margin-right: 1rem;
+}
+.detailContainers p {
+  font-weight: 700;
+}
+.detailContainers span {
+  font-family: "Merriweather", serif;
+  text-transform: none;
+  font-style: italic;
+}
+
+@media (min-width: 900px) {
+  .detailContainers {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .detailContainers li {
+    width: calc(33.3333333333% - 1rem);
+    min-height: 6rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    text-align: left;
   }
 }
