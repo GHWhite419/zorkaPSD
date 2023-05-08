@@ -27,7 +27,11 @@ footer {
     display: flex;
     li {
       color: $colorPrimary;
-      margin: 0.5rem;
+      margin-right: 1rem;
+      font-size: 1rem;
+    }
+    li:hover i {
+      color: $colorAccent;
     }
   }
   ul {
@@ -70,7 +74,8 @@ footer {
       flex-direction: column;
     }
     ul li {
-      margin-left: 0;
+      margin: .25rem 0;
+      font-weight: 500;
     }
     .social {
       flex-direction: row;

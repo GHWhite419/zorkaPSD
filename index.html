@@ -14,28 +14,42 @@
         <i class="fa-solid fa-bars fa-xl menuOpenButton"></i>
         <div class="settingsBanner">
           <i class="fa-solid fa-xmark menuCloseButton"></i>
-          <p>Welcome guest! <a href="">Log in</a> or <a href="">register</a></p>
+          <p>
+            Welcome guest! <a href="#">Log in</a> or <a href="#">register</a>
+          </p>
           <ul>
-            <li>My setting</li>
-            <li>Language: EN</li>
-            <li>Currency: USD</li>
+            <li>
+              My setting
+              <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+            </li>
+            <li>
+              Language: EN
+              <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+            </li>
+            <li>
+              Currency: USD
+              <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+            </li>
           </ul>
         </div>
         <div class="titleBanner">
           <ul class="social">
-            <li>
+            <span class="sr-only"
+              >Follow us on our social media platforms:
+            </span>
+            <li aria-label="Facebook">
               <i class="fa-brands fa-square-facebook fa-lg"></i>
             </li>
-            <li>
+            <li aria-label="Twitter">
               <i class="fa-brands fa-square-twitter fa-lg"></i>
             </li>
-            <li>
+            <li aria-label="Instagram">
               <i class="fa-brands fa-square-instagram fa-lg"></i>
             </li>
-            <li>
+            <li aria-label="VKontakte">
               <i class="fa-brands fa-vk fa-lg"></i>
             </li>
-            <li>
+            <li aria-label="Behance">
               <i class="fa-brands fa-square-behance fa-lg"></i>
             </li>
           </ul>
@@ -43,17 +57,28 @@
             <h1 class="sr-only">Zorka</h1>
             <img src="/assets/logo.png" aria-hidden="true" />
           </div>
-          <a href=""><i class="fa-thin fa-cart-shopping"></i></a>
+          <a href="#"
+            ><img
+              src="./assets/cart-icon.png"
+              alt="Your shopping cart, which has 1 item in it."
+          /></a>
         </div>
         <nav>
           <ul>
             <li class="currentPage">Home</li>
             <li>Shop</li>
-            <li>Portfolio</li>
-            <li>Blog</li>
+            <li>
+              Portfolio
+              <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+            </li>
+            <li>
+              Blog <i class="fa-solid fa-angle-down" aria-hidden="true"></i>
+            </li>
             <li>Pages</li>
             <li>Contact</li>
-            <li><i class="fa-thin fa-magnifying-glass"></i></li>
+            <li class="search">
+              <img src="./assets/search-icon.png" alt="Search our website." />
+            </li>
           </ul>
         </nav>
       </div>
@@ -77,6 +102,7 @@
               </div>
               <div class="promoIcon">
                 <img src="assets/white-cart-icon.png" aria-hidden="true" />
+                <!-- You'll notice a pattern here where I use image tags instead of icons even though font-awesome is linked. The reason for this is because font-awesome gave me issues with certain icons being broken, and since I had a lot of image assets provided with this project, I used those instead where necessary. -->
               </div>
             </li>
             <li>
@@ -110,7 +136,18 @@
           <ul class="itemDisplay">
             <li>
               <div class="imgContainer">
-                <img src="./assets/product-img-1.jpg" alt="" />
+                <img
+                  src="./assets/product-img-1.jpg"
+                  alt="Female model wearing a beige flared jacket."
+                />
+                <div class="itemHover">
+                  <div class="hoverIcon">
+                    <img
+                      src="./assets/white-search-icon.png"
+                      aria-hidden="true"
+                    />
+                  </div>
+                </div>
               </div>
               <h3>Handmade flared jacket</h3>
               <p class="pricetag">189.99 USD</p>
@@ -118,17 +155,38 @@
                 <button>Add to cart</button>
                 <div class="shopIcons">
                   <button>
-                    <img src="./assets/repeat-icon.png" alt="" />
+                    <img
+                      src="./assets/repeat-icon.png"
+                      alt="Share this item."
+                    />
                   </button>
                   <button>
-                    <img src="./assets/heart-icon.png" alt="" />
+                    <img
+                      src="./assets/heart-icon.png"
+                      alt="Favorite this item."
+                    />
                   </button>
                 </div>
               </div>
             </li>
             <li>
               <div class="imgContainer">
-                <img src="./assets/product-img-2.jpg" alt="" />
+                <img
+                  src="./assets/product-img-2.jpg"
+                  alt="Male model wearing a brown wool suit coat."
+                />
+                <div class="itemHover">
+                  <div class="hoverIcon">
+                    <img
+                      src="./assets/white-search-icon.png"
+                      aria-hidden="true"
+                    />
+                  </div>
+                </div>
+                <div class="iconCollection">
+                  <span class="discountIcon">-25%</span>
+                  <span class="newIcon">New</span>
+                </div>
               </div>
               <h3>Coat with wool wraparound collar</h3>
               <p class="pricetag">100.99 USD <s>189.99 USD</s></p>
@@ -136,17 +194,34 @@
                 <button>Add to cart</button>
                 <div class="shopIcons">
                   <button>
-                    <img src="./assets/repeat-icon.png" alt="" />
+                    <img
+                      src="./assets/repeat-icon.png"
+                      alt="Share this item."
+                    />
                   </button>
                   <button>
-                    <img src="./assets/heart-icon.png" alt="" />
+                    <img
+                      src="./assets/heart-icon.png"
+                      alt="Favorite this item."
+                    />
                   </button>
                 </div>
               </div>
             </li>
             <li>
               <div class="imgContainer">
-                <img src="./assets/product-img-3.jpg" alt="" />
+                <img
+                  src="./assets/product-img-3.jpg"
+                  alt="Female model wearing a loose-fitting cream-colored longsleeve."
+                />
+                <div class="itemHover">
+                  <div class="hoverIcon">
+                    <img
+                      src="./assets/white-search-icon.png"
+                      aria-hidden="true"
+                    />
+                  </div>
+                </div>
               </div>
               <h3>Utility jacket</h3>
               <p class="pricetag">189.99 USD</p>
@@ -154,17 +229,52 @@
                 <button>Add to cart</button>
                 <div class="shopIcons">
                   <button>
-                    <img src="./assets/repeat-icon.png" alt="" />
+                    <img
+                      src="./assets/repeat-icon.png"
+                      alt="Share this item."
+                    />
                   </button>
                   <button>
-                    <img src="./assets/heart-icon.png" alt="" />
+                    <img
+                      src="./assets/heart-icon.png"
+                      alt="Favorite this item."
+                    />
                   </button>
                 </div>
               </div>
             </li>
             <li>
               <div class="imgContainer">
-                <img src="./assets/product-img-4.jpg" alt="" />
+                <img
+                  src="./assets/product-img-4.jpg"
+                  alt="Male model wearing a gray blazer."
+                />
+                <div class="itemHover">
+                  <div class="hoverIcon">
+                    <img
+                      src="./assets/white-search-icon.png"
+                      aria-hidden="true"
+                    />
+                  </div>
+                </div>
+                <ul class="itemTimer">
+                  <li>
+                    <span>15</span>
+                    <p>Day</p>
+                  </li>
+                  <li>
+                    <span>22</span>
+                    <p>Hour</p>
+                  </li>
+                  <li>
+                    <span>9</span>
+                    <p>Min</p>
+                  </li>
+                  <li>
+                    <span>17</span>
+                    <p>Sec</p>
+                  </li>
+                </ul>
               </div>
               <h3>Aniaml print coat</h3>
               <p class="pricetag">189.99 USD</p>
@@ -172,10 +282,16 @@
                 <button>Add to cart</button>
                 <div class="shopIcons">
                   <button>
-                    <img src="./assets/repeat-icon.png" alt="" />
+                    <img
+                      src="./assets/repeat-icon.png"
+                      alt="Share this item."
+                    />
                   </button>
                   <button>
-                    <img src="./assets/heart-icon.png" alt="" />
+                    <img
+                      src="./assets/heart-icon.png"
+                      alt="Favorite this item."
+                    />
                   </button>
                 </div>
               </div>
@@ -184,16 +300,22 @@
 
           <div class="shopBanners">
             <div class="imgContainer">
-              <img src="./assets/home-bg-1.jpg" alt="" />
+              <img
+                src="./assets/home-bg-1.jpg"
+                alt="A woman walks down along a city street holding a camera, decked out in a fashionable Zorka coat and hat."
+              />
               <div class="imgContent">
                 <p>Zorka fashion store</p>
               </div>
             </div>
             <div class="imgContainer">
-              <img src="./assets/home-bg-2.jpg" alt="" />
+              <img
+                src="./assets/home-bg-2.jpg"
+                alt="A person pulls a loose Zorka wool hoodie off over their head."
+              />
               <div class="imgContent">
                 <div class="anchorIcon">
-                  <img src="./assets/anchor-icon.png" alt="" />
+                  <img src="./assets/anchor-icon.png" aria-hidden="true" />
                 </div>
                 <p>50% off <span>every Tuesday</span></p>
               </div>
@@ -206,7 +328,21 @@
           <ul class="itemDisplay">
             <li>
               <div class="imgContainer">
-                <img src="./assets/product-img-5.jpg" alt="" />
+                <img
+                  src="./assets/product-img-5.jpg"
+                  alt="Male model wearing a denim jacket."
+                />
+                <div class="itemHover">
+                  <div class="hoverIcon">
+                    <img
+                      src="./assets/white-search-icon.png"
+                      aria-hidden="true"
+                    />
+                  </div>
+                </div>
+                <div class="iconCollection">
+                  <span class="discountIcon">-30%</span>
+                </div>
               </div>
               <h3>Hooder bomber jacket</h3>
               <p class="pricetag">100.99 USD <s>189.99 USD</s></p>
@@ -214,17 +350,37 @@
                 <button>Add to cart</button>
                 <div class="shopIcons">
                   <button>
-                    <img src="./assets/repeat-icon.png" alt="" />
+                    <img
+                      src="./assets/repeat-icon.png"
+                      alt="Share this item."
+                    />
                   </button>
                   <button>
-                    <img src="./assets/heart-icon.png" alt="" />
+                    <img
+                      src="./assets/heart-icon.png"
+                      alt="Favorite this item."
+                    />
                   </button>
                 </div>
               </div>
             </li>
             <li>
               <div class="imgContainer">
-                <img src="./assets/product-img-6.jpg" alt="" />
+                <img
+                  src="./assets/product-img-6.jpg"
+                  alt="Female model wearing a striped longsleeve with denim cutoff overalls."
+                />
+                <div class="itemHover">
+                  <div class="hoverIcon">
+                    <img
+                      src="./assets/white-search-icon.png"
+                      aria-hidden="true"
+                    />
+                  </div>
+                </div>
+                <div class="iconCollection">
+                  <span class="discountIcon">-50%</span>
+                </div>
               </div>
               <h3>Structured collarless coat</h3>
               <p class="pricetag">100.99 USD <s>189.99 USD</s></p>
@@ -232,17 +388,37 @@
                 <button>Add to cart</button>
                 <div class="shopIcons">
                   <button>
-                    <img src="./assets/repeat-icon.png" alt="" />
+                    <img
+                      src="./assets/repeat-icon.png"
+                      alt="Share this item."
+                    />
                   </button>
                   <button>
-                    <img src="./assets/heart-icon.png" alt="" />
+                    <img
+                      src="./assets/heart-icon.png"
+                      alt="Favorite this item."
+                    />
                   </button>
                 </div>
               </div>
             </li>
             <li>
               <div class="imgContainer">
-                <img src="./assets/product-img-7.jpg" alt="" />
+                <img
+                  src="./assets/product-img-7.jpg"
+                  alt="Female model wearing a loose-fitting wool coat."
+                />
+                <div class="itemHover">
+                  <div class="hoverIcon">
+                    <img
+                      src="./assets/white-search-icon.png"
+                      aria-hidden="true"
+                    />
+                  </div>
+                </div>
+                <div class="iconCollection">
+                  <span class="discountIcon">-15%</span>
+                </div>
               </div>
               <h3>Houndstooth wool coat</h3>
               <p class="pricetag">100.99 USD <s>189.99 USD</s></p>
@@ -250,17 +426,37 @@
                 <button>Add to cart</button>
                 <div class="shopIcons">
                   <button>
-                    <img src="./assets/repeat-icon.png" alt="" />
+                    <img
+                      src="./assets/repeat-icon.png"
+                      alt="Share this item."
+                    />
                   </button>
                   <button>
-                    <img src="./assets/heart-icon.png" alt="" />
+                    <img
+                      src="./assets/heart-icon.png"
+                      alt="Favorite this item."
+                    />
                   </button>
                 </div>
               </div>
             </li>
             <li>
               <div class="imgContainer">
-                <img src="./assets/product-img-8.jpg" alt="" />
+                <img
+                  src="./assets/product-img-8.jpg"
+                  alt="Female model wearing a dark"
+                />
+                <div class="itemHover">
+                  <div class="hoverIcon">
+                    <img
+                      src="./assets/white-search-icon.png"
+                      aria-hidden="true"
+                    />
+                  </div>
+                </div>
+                <div class="iconCollection">
+                  <span class="discountIcon">-25%</span>
+                </div>
               </div>
               <h3>Coat with wraparound collar</h3>
               <p class="pricetag">100.99 USD <s>189.99 USD</s></p>
@@ -268,10 +464,16 @@
                 <button>Add to cart</button>
                 <div class="shopIcons">
                   <button>
-                    <img src="./assets/repeat-icon.png" alt="" />
+                    <img
+                      src="./assets/repeat-icon.png"
+                      alt="Share this item."
+                    />
                   </button>
                   <button>
-                    <img src="./assets/heart-icon.png" alt="" />
+                    <img
+                      src="./assets/heart-icon.png"
+                      alt="Favorite this item."
+                    />
                   </button>
                 </div>
               </div>
@@ -287,34 +489,60 @@
             <ul>
               <li>
                 <div class="imgContainer">
-                  <img src="./assets/new-in-img-1.jpg" alt="" />
+                  <img
+                    src="./assets/new-in-img-1.jpg"
+                    alt="A brown satchel sits with its loop off to the side."
+                  />
                 </div>
                 <div class="itemDetails">
                   <h3>Parka with faux fur hood</h3>
                   <p class="pricetag">189.99 USD</p>
                   <div class="shopIcons">
-                    <button><img src="./assets/cart-icon.png" alt="" /></button
+                    <button>
+                      <img
+                        src="./assets/cart-icon.png"
+                        alt="Add this item to your cart."
+                      /></button
                     ><button>
-                      <img src="./assets/repeat-icon.png" alt="" /></button
+                      <img
+                        src="./assets/repeat-icon.png"
+                        alt="Share this item."
+                      /></button
                     ><button>
-                      <img src="./assets/heart-icon.png" alt="" />
+                      <img
+                        src="./assets/heart-icon.png"
+                        alt="Favorite this item."
+                      />
                     </button>
                   </div>
                 </div>
               </li>
               <li>
                 <div class="imgContainer">
-                  <img src="./assets/new-in-img-2.jpg" alt="" />
+                  <img
+                    src="./assets/new-in-img-2.jpg"
+                    alt="A young child wearing a longsleeve and a toque."
+                  />
                 </div>
                 <div class="itemDetails">
                   <h3>Bomber jacket</h3>
                   <p class="pricetag">189.99 USD</p>
                   <div class="shopIcons">
-                    <button><img src="./assets/cart-icon.png" alt="" /></button
+                    <button>
+                      <img
+                        src="./assets/cart-icon.png"
+                        alt="Add this item to your cart."
+                      /></button
                     ><button>
-                      <img src="./assets/repeat-icon.png" alt="" /></button
+                      <img
+                        src="./assets/repeat-icon.png"
+                        alt="Share this item."
+                      /></button
                     ><button>
-                      <img src="./assets/heart-icon.png" alt="" />
+                      <img
+                        src="./assets/heart-icon.png"
+                        alt="Favorite this item."
+                      />
                     </button>
                   </div>
                 </div>
@@ -326,34 +554,60 @@
             <ul>
               <li>
                 <div class="imgContainer">
-                  <img src="./assets/featured-img-1.jpg" alt="" />
+                  <img
+                    src="./assets/featured-img-1.jpg"
+                    alt="Female model wearing a brown blazer."
+                  />
                 </div>
                 <div class="itemDetails">
                   <h3>Handmade flared jacket</h3>
                   <p class="pricetag">189.99 USD</p>
                   <div class="shopIcons">
-                    <button><img src="./assets/cart-icon.png" alt="" /></button
+                    <button>
+                      <img
+                        src="./assets/cart-icon.png"
+                        alt="Add this item to your cart."
+                      /></button
                     ><button>
-                      <img src="./assets/repeat-icon.png" alt="" /></button
+                      <img
+                        src="./assets/repeat-icon.png"
+                        alt="Share this item."
+                      /></button
                     ><button>
-                      <img src="./assets/heart-icon.png" alt="" />
+                      <img
+                        src="./assets/heart-icon.png"
+                        alt="Favorite this item."
+                      />
                     </button>
                   </div>
                 </div>
               </li>
               <li>
                 <div class="imgContainer">
-                  <img src="./assets/featured-img-2.jpg" alt="" />
+                  <img
+                    src="./assets/featured-img-2.jpg"
+                    alt="A pair of white sneakers showing their side profile."
+                  />
                 </div>
                 <div class="itemDetails">
                   <h3>Short knit coat with belt</h3>
                   <p class="pricetag">189.99 USD</p>
                   <div class="shopIcons">
-                    <button><img src="./assets/cart-icon.png" alt="" /></button
+                    <button>
+                      <img
+                        src="./assets/cart-icon.png"
+                        alt="Add this item to your cart."
+                      /></button
                     ><button>
-                      <img src="./assets/repeat-icon.png" alt="" /></button
+                      <img
+                        src="./assets/repeat-icon.png"
+                        alt="Share this item."
+                      /></button
                     ><button>
-                      <img src="./assets/heart-icon.png" alt="" />
+                      <img
+                        src="./assets/heart-icon.png"
+                        alt="Favorite this item."
+                      />
                     </button>
                   </div>
                 </div>
@@ -365,34 +619,60 @@
             <ul>
               <li>
                 <div class="imgContainer">
-                  <img src="./assets/toprated-img-1.jpg" alt="" />
+                  <img
+                    src="./assets/toprated-img-1.jpg"
+                    alt="A young child wearimg a wool turtleneck with a brown backpack."
+                  />
                 </div>
                 <div class="itemDetails">
                   <h3>Oversize bomber jacket</h3>
                   <p class="pricetag">189.99 USD</p>
                   <div class="shopIcons">
-                    <button><img src="./assets/cart-icon.png" alt="" /></button
+                    <button>
+                      <img
+                        src="./assets/cart-icon.png"
+                        alt="Add this item to your cart."
+                      /></button
                     ><button>
-                      <img src="./assets/repeat-icon.png" alt="" /></button
+                      <img
+                        src="./assets/repeat-icon.png"
+                        alt="Share this item."
+                      /></button
                     ><button>
-                      <img src="./assets/heart-icon.png" alt="" />
+                      <img
+                        src="./assets/heart-icon.png"
+                        alt="Favorite this item."
+                      />
                     </button>
                   </div>
                 </div>
               </li>
               <li>
                 <div class="imgContainer">
-                  <img src="./assets/toprated-img-2.jpg" alt="" />
+                  <img
+                    src="./assets/toprated-img-2.jpg"
+                    alt="Male model wearing an open white jacket."
+                  />
                 </div>
                 <div class="itemDetails">
                   <h3>Handmade flared jacket</h3>
                   <p class="pricetag">189.99 USD</p>
                   <div class="shopIcons">
-                    <button><img src="./assets/cart-icon.png" alt="" /></button
+                    <button>
+                      <img
+                        src="./assets/cart-icon.png"
+                        alt="Add this item to your cart."
+                      /></button
                     ><button>
-                      <img src="./assets/repeat-icon.png" alt="" /></button
+                      <img
+                        src="./assets/repeat-icon.png"
+                        alt="Share this item."
+                      /></button
                     ><button>
-                      <img src="./assets/heart-icon.png" alt="" />
+                      <img
+                        src="./assets/heart-icon.png"
+                        alt="Favorite this item."
+                      />
                     </button>
                   </div>
                 </div>
@@ -409,7 +689,10 @@
           <ul>
             <li>
               <div class="imgContainer">
-                <img src="./assets/blog-img-1.jpg" alt="" />
+                <img
+                  src="./assets/blog-img-1.jpg"
+                  alt="Closeup side headshot of a young brunette in glasses."
+                />
               </div>
               <article>
                 <h3>Mix & match weekend</h3>
@@ -417,12 +700,15 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
                   quam quos? Magni...
                 </p>
-                <a href="">Read more</a>
+                <a href="#">Read more</a>
               </article>
             </li>
             <li>
               <div class="imgContainer">
-                <img src="./assets/blog-img-2.jpg" alt="" />
+                <img
+                  src="./assets/blog-img-2.jpg"
+                  alt="A young man in a denim vest, his hands in his pockets."
+                />
               </div>
               <article>
                 <h3>For your inspiration</h3>
@@ -430,12 +716,15 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
                   quam quos? Magni...
                 </p>
-                <a href="">Read more</a>
+                <a href="#">Read more</a>
               </article>
             </li>
             <li>
               <div class="imgContainer">
-                <img src="./assets/blog-img-3.jpg" alt="" />
+                <img
+                  src="./assets/blog-img-3.jpg"
+                  alt="A blonde woman poses in an elegant white dress with her back to us."
+                />
               </div>
               <article>
                 <h3>London fashion week 2015</h3>
@@ -443,7 +732,7 @@
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde,
                   quam quos? Magni...
                 </p>
-                <a href="">Read more</a>
+                <a href="#">Read more</a>
               </article>
             </li>
           </ul>
@@ -453,7 +742,7 @@
       <section class="subscribe">
         <div class="wrapper">
           <div class="mailIcon">
-            <img src="./assets/envelope-icon.png" alt="" />
+            <img src="./assets/envelope-icon.png" aria-hidden="true" />
           </div>
           <h2>Subscribe</h2>
           <p class="subHeader">Get the latest news & updates from Zorka</p>
@@ -466,24 +755,28 @@
               id="subscribe"
               placeholder="Your email address"
             />
-            <button type="submit">Subscribe</button>
+            <!-- I use type button instead of submit to deaden the button. -->
+            <button type="button">Subscribe</button>
           </form>
         </div>
       </section>
 
       <section class="details">
         <ul class="logos">
-          <li><img src="./assets/bershka.png" alt="" /></li>
-          <li><img src="./assets/pull-bear.png" alt="" /></li>
-          <li><img src="./assets/hm.png" alt="" /></li>
-          <li><img src="./assets/zara.png" alt="" /></li>
-          <li><img src="./assets/mango.png" alt="" /></li>
+          <span class="sr-only"
+            >Other clothing brands we are partnered with:
+          </span>
+          <li><img src="./assets/bershka.png" alt="Bershka" /></li>
+          <li><img src="./assets/pull-bear.png" alt="Pull & Bear" /></li>
+          <li><img src="./assets/hm.png" alt="H&M" /></li>
+          <li><img src="./assets/zara.png" alt="Zara" /></li>
+          <li><img src="./assets/mango.png" alt="Mango" /></li>
         </ul>
         <div class="wrapper">
           <ul class="detailContainers">
             <li>
               <div class="imgContainer">
-                <img src="./assets/clock-icon.png" alt="" />
+                <img src="./assets/clock-icon.png" aria-hidden="true" />
               </div>
               <div class="detailText">
                 <p>Opening all week</p>
@@ -492,7 +785,7 @@
             </li>
             <li>
               <div class="imgContainer">
-                <img src="./assets/medal-icon.png" alt="" />
+                <img src="./assets/medal-icon.png" aria-hidden="true" />
               </div>
               <div class="detailText">
                 <p>25% off women t-shirt</p>
@@ -501,7 +794,7 @@
             </li>
             <li>
               <div class="imgContainer">
-                <img src="./assets/world-icon.png" alt="" />
+                <img src="./assets/world-icon.png" aria-hidden="true" />
               </div>
               <div class="detailText">
                 <p>Free ship all order</p>
@@ -522,19 +815,22 @@
             <p>Tel. +1 2123431725</p>
             <p>Email. info@thememove.com</p>
             <ul class="social">
-              <li>
+              <span class="sr-only"
+                >Follow us on our social media platforms:
+              </span>
+              <li aria-label="Facebook">
                 <i class="fa-brands fa-square-facebook fa-lg"></i>
               </li>
-              <li>
+              <li aria-label="Twitter">
                 <i class="fa-brands fa-square-twitter fa-lg"></i>
               </li>
-              <li>
+              <li aria-label="Instagram">
                 <i class="fa-brands fa-square-instagram fa-lg"></i>
               </li>
-              <li>
+              <li aria-label="VKontakte">
                 <i class="fa-brands fa-vk fa-lg"></i>
               </li>
-              <li>
+              <li aria-label="Behance">
                 <i class="fa-brands fa-square-behance fa-lg"></i>
               </li>
             </ul>

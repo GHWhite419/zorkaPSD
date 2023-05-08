@@ -3,10 +3,8 @@
 .hotItems {
   padding: 1rem 0;
     background-color: $colorBackgroundAlt;
-//   background-color: blue;
   .wrapper div {
     background-color: $colorBackground;
-    // background-color: wheat;
     padding: 0 0.5rem;
     margin: 1rem 0;
     li {
@@ -21,12 +19,14 @@
     width: 5rem;
     margin: auto;
     margin-bottom: 2.5rem;
+    letter-spacing: 4px;
   }
 
   h2,
   h3 {
     color: $colorAccent;
-    font-size: 0.75rem;
+    font-size: 0.7rem;
+    font-weight: 500;
   }
   .wrapper .imgContainer {
     max-width: 8rem;

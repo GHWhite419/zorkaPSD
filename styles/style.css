@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&family=Montserrat:ital@0;1&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300&family=Montserrat:ital,wght@0,400;0,500;0,600;1,400&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -314,6 +314,9 @@ header .wrapper {
 .settingsBanner li {
   padding-top: 1rem;
 }
+.settingsBanner li i {
+  padding-left: 0.25rem;
+}
 .settingsBanner a {
   color: #939495;
   text-decoration: none;
@@ -357,6 +360,7 @@ header .wrapper {
 
 .social li {
   padding-top: 1rem;
+  font-size: 1rem;
 }
 
 .logo {
@@ -386,8 +390,15 @@ nav ul li {
   padding-bottom: 0.5rem;
   color: #000;
 }
+nav ul i {
+  padding-left: 0.25rem;
+  color: #939495;
+}
 nav ul .currentPage {
   border-bottom: 2px solid #000;
+}
+nav ul .search {
+  width: 0.75rem;
 }
 
 @media (min-width: 860px) {
@@ -418,6 +429,10 @@ nav ul .currentPage {
     padding-top: 0;
     padding-left: 1rem;
   }
+  .menuOpen {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
   header .social {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -425,6 +440,9 @@ nav ul .currentPage {
   }
   header .social li {
     padding: 0 0.5rem;
+  }
+  header .social li:hover {
+    color: #000;
   }
 }
 .slideshow {
@@ -472,9 +490,12 @@ nav ul .currentPage {
   padding: 0.75rem 1.5rem;
   border-radius: 2rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 1px;
   font-size: 0.65rem;
+}
+.slideshow button:active {
+  background-color: #ca7379;
 }
 
 .promotions li {
@@ -490,7 +511,7 @@ nav ul .currentPage {
           justify-content: space-between;
   margin: 1.5rem 0;
   font-size: 0.6rem;
-  font-weight: 700;
+  font-weight: 600;
 }
 .promotions li .promoText {
   width: 100%;
@@ -574,7 +595,7 @@ nav ul .currentPage {
 .shop .trendingCategories li {
   color: #000;
   padding: 0 0.75rem;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 2px;
   margin: 0.5rem 0;
 }
@@ -597,12 +618,15 @@ nav ul .currentPage {
   padding: 0.75rem 1.5rem;
   border-radius: 2rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 1px;
   font-size: 0.65rem;
   border: 1px solid #939495;
   padding: 0.5rem 1rem;
   font-size: 0.6rem;
+}
+.shop button:active {
+  background-color: #ca7379;
 }
 .shop .itemDisplay {
   display: -webkit-box;
@@ -619,6 +643,135 @@ nav ul .currentPage {
   text-align: center;
   margin: 0 1rem;
   margin-bottom: 2.5rem;
+}
+.shop .itemDisplay .imgContainer {
+  position: relative;
+}
+.shop .itemDisplay .itemHover {
+  position: absolute;
+  background-color: #fff;
+  width: calc(100% - 0.85rem);
+  height: calc(100% - 0.85rem);
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-filter: opacity(0.9);
+          filter: opacity(0.9);
+  display: none;
+}
+.shop .itemDisplay .hoverIcon {
+  background-color: #ca7379;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 2.5rem;
+  border-radius: 100%;
+}
+.shop .itemDisplay .hoverIcon img {
+  padding: 0.65rem;
+}
+.shop .itemDisplay .imgContainer:hover .itemHover {
+  display: block;
+}
+.shop .itemDisplay .iconCollection {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  letter-spacing: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.shop .itemDisplay .iconCollection span {
+  color: #fff;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  font-weight: 500;
+  height: 3rem;
+  width: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0.5rem;
+  margin-top: 0;
+}
+.shop .itemDisplay .discountIcon {
+  background-color: #ca7379;
+}
+.shop .itemDisplay .newIcon {
+  background-color: #8090a1;
+}
+.shop .itemDisplay .itemTimer {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+  bottom: 0;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: white;
+  -webkit-filter: opacity(0.9);
+          filter: opacity(0.9);
+  height: 35%;
+}
+.shop .itemDisplay .itemTimer li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+.shop .itemDisplay .itemTimer p {
+  padding: 0;
+  margin: 0;
+  color: #000;
+  font-size: 0.6rem;
+  letter-spacing: 0;
+  font-weight: 600;
+}
+.shop .itemDisplay .itemTimer span {
+  color: #fff;
+  background-color: #000;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  font-weight: 500;
+  height: 2rem;
+  width: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0;
 }
 .shop h3 {
   color: #000;
@@ -638,66 +791,10 @@ nav ul .currentPage {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.shop .shopBanners {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.shop .shopBanners .imgContainer {
-  position: relative;
-  margin: 1rem 0;
-}
-.shop .imgContent {
-  position: absolute;
-  color: #fff;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.shop .imgContent p {
-  font-size: 1rem;
-  font-weight: 700;
-}
-.shop .imgContainer:first-of-type p {
-  max-width: 10rem;
-}
-.shop .imgContainer:nth-of-type(2) .imgContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 85%;
-}
-.shop .imgContainer:nth-of-type(2) p {
-  margin: 0;
-  text-align: center;
-  letter-spacing: 9px;
-  padding: 0 0.5rem;
-  width: 100%;
-}
-.shop .imgContainer:nth-of-type(2) span {
-  display: block;
-  font-size: 1rem;
-  font-weight: 400;
-  letter-spacing: 5px;
-}
-.shop .anchorIcon {
-  padding: 0.5rem;
-  border-right: 3.5px solid #fff;
-  display: none;
-}
 
 .pricetag {
   color: #ca7379;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .shopIcons button {
@@ -707,12 +804,91 @@ nav ul .currentPage {
   width: 1rem;
 }
 
+@media (min-width: 1200px) {
+  .shop .itemDisplay {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 2.5rem;
+  }
+  .shop .itemDisplay li {
+    width: calc(25% - 0.75rem);
+    margin: 0;
+  }
+}
+.shopBanners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.shopBanners .imgContainer {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.imgContent {
+  position: absolute;
+  color: #fff;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.imgContent p {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.imgContainer:first-of-type p {
+  max-width: 10rem;
+  padding-left: 3rem;
+}
+
+.imgContainer:nth-of-type(2) .imgContent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 85%;
+}
+.imgContainer:nth-of-type(2) p {
+  margin: 0;
+  text-align: center;
+  letter-spacing: 9px;
+  padding: 0 0.5rem;
+  width: 100%;
+}
+.imgContainer:nth-of-type(2) span {
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 5px;
+}
+
+.anchorIcon {
+  padding: 0.5rem;
+  border-right: 3.5px solid #fff;
+  display: none;
+}
+
 @media (min-width: 375px) {
   .shop .imgContent p {
     font-size: 1.5rem;
   }
 }
 @media (min-width: 640px) {
+  .shop .imgContainer:first-of-type {
+    line-height: 2rem;
+    font-size: 1.75rem;
+    letter-spacing: 0.4rem;
+  }
   .shop .imgContainer:nth-of-type(2) .imgContent {
     width: auto;
   }
@@ -732,16 +908,6 @@ nav ul .currentPage {
   }
 }
 @media (min-width: 1200px) {
-  .shop .itemDisplay {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    margin-bottom: 2.5rem;
-  }
-  .shop .itemDisplay li {
-    width: calc(25% - 0.75rem);
-    margin: 0;
-  }
   .shopBanners .imgContainer {
     width: calc(50% - 0.75rem);
   }
@@ -769,11 +935,13 @@ nav ul .currentPage {
   width: 5rem;
   margin: auto;
   margin-bottom: 2.5rem;
+  letter-spacing: 4px;
 }
 .hotItems h2,
 .hotItems h3 {
   color: #000;
-  font-size: 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 500;
 }
 .hotItems .wrapper .imgContainer {
   max-width: 8rem;
@@ -791,12 +959,15 @@ nav ul .currentPage {
   padding: 0.75rem 1.5rem;
   border-radius: 2rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 1px;
   font-size: 0.65rem;
   border: 1px solid #939495;
   padding: 0.5rem;
   margin: 0;
+}
+.hotItems .shopIcons button:active {
+  background-color: #ca7379;
 }
 
 @media (min-width: 520px) {
@@ -1045,13 +1216,23 @@ nav ul .currentPage {
   padding: 0.75rem 1.5rem;
   border-radius: 2rem;
   font-family: "Montserrat", sans-serif;
-  font-weight: 700;
+  font-weight: 500;
   letter-spacing: 1px;
   font-size: 0.65rem;
   background-color: #ca7379;
   color: #fff;
   font-size: 0.65rem;
   margin: 0.5rem;
+}
+.subscribe button:active {
+  background-color: #ca7379;
+}
+.subscribe button:active {
+  background-color: #fff;
+  color: #000;
+}
+.subscribe button:focus-visible {
+  border: 1px solid #c1ac91;
 }
 
 @media (min-width: 1200px) {
@@ -1162,7 +1343,11 @@ footer .social {
 }
 footer .social li {
   color: #939495;
-  margin: 0.5rem;
+  margin-right: 1rem;
+  font-size: 1rem;
+}
+footer .social li:hover i {
+  color: #000;
 }
 footer ul {
   display: -webkit-box;
@@ -1215,7 +1400,8 @@ footer .copyrightBanner ul {
             flex-direction: column;
   }
   footer ul li {
-    margin-left: 0;
+    margin: 0.25rem 0;
+    font-weight: 500;
   }
   footer .social {
     -webkit-box-orient: horizontal;

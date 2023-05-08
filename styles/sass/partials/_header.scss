@@ -17,6 +17,9 @@ header .wrapper {
   padding: 1rem;
   li {
     padding-top: 1rem;
+    i {
+      padding-left: .25rem;
+    }
   }
   a {
     color: $colorPrimary;
@@ -54,6 +57,7 @@ header .wrapper {
 
 .social li {
   padding-top: 1rem;
+  font-size: 1rem;
 }
 
 .logo {
@@ -76,8 +80,15 @@ nav ul {
     padding-bottom: 0.5rem;
     color: $colorAccent;
   }
+  i {
+    padding-left: .25rem;
+    color: $colorPrimary;
+  }
   .currentPage {
     border-bottom: 2px solid $colorAccent;
+  }
+  .search {
+    width: .75rem;
   }
 }
 
@@ -105,10 +116,17 @@ nav ul {
     }
   }
 
+  .menuOpen {
+    box-shadow: none;
+  }
+
   header .social {
     display: flex;
     li {
       padding: 0 0.5rem;
+    }
+    li:hover {
+      color: $colorAccent;
     }
   }
 }

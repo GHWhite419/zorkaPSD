@@ -46,6 +46,13 @@
     color: $colorBackground;
     font-size: 0.65rem;
     margin: .5rem;
+    &:active {
+      background-color: $colorBackground;
+      color: $colorAccent;
+    }
+    &:focus-visible {
+      border: 1px solid $colorPromoSecondary;
+    }
   }
 }
 
